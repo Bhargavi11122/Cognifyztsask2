@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Task3-Responsive Design</title>
+</head>
+<body style="font-family:'segoe UI',Tahoma,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; text-align: center; padding-top: 50px;">
+    <div style="background-color:#f4f7f6; display:inline-block; padding: 30px;border-radius:10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1);">
+            <h2 style="color:#333; margin-bottom:20px;">Cognifyz Internship-Task 2</h2>
+            <form action="/submit" method="POST">
+                <label style="font-size:18px; color:#555;"> NAME:</label><br><br>
+                <input type="text" name="Username" style="padding: 10px; width: 250px; border: 1px solid #ccc; border-radius: 5px; font-size:16px;" required>
+                <br><br>
+                <button type="submit" style="padding: 10px 20px; background-color: #28a745; color:white; border: none; border-radius:5px; font-size:16px;cursor: pointer;""> SUBMIT</button>
+            </form>
+            <% if (typeof error !== 'undefined') { %>
+                <h4 style="color: red; margin-top: 20px;"><%= error %></h4>
+            <% } %>
+            <% if (typeof name !== 'undefined') { %>
+                <h3 style="color: green; margin-top: 20px;"> HELLO 🎉<%= name %>, your data 📁is saved✔</h3>
+            <% } %>            
+    </div>
+    
+</body>
+</html>
